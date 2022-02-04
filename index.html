@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pedra, Papel e Tesoura</title>
+</head>
+<body>
+  <div class="game__container">
+    <div class="game">
+      <span id="player"></span>
+      <span>VS</span>
+      <span id="bot"></span>
+    </div>
+
+    <div class="win__count">
+      <span>Vitórias:</span>
+      <span id="win__count"></span>
+    </div>
+
+    <div class="loss__count">
+      <span>Derrotas:</span>
+      <span id="loss__count"></span>
+    </div>
+  </div>
+
+  <div class="buttons__container" id="buttons">
+    <button value="1">Pedra</button>
+    <button value="2">Papel</button>
+    <button value="3">Tesoura</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
