@@ -31,17 +31,9 @@ const onClickButton = () => {
 onClickButton()
 
 const pickWinner = (playerOption, botOption) => {
-  if (playerOption === "Pedra") {
-    if (botOption === "Tesoura") return true
+  if (playerOption === "Pedra" && botOption === "Tesoura") return true
+  if (playerOption === "Papel" && botOption === "Pedora") return true
+  if (playerOption === "Tesoura" && botOption === "Papel") return true
 
-    return false
-  } else if (playerOption === "Papel") {
-    if (botOption === "Pedra") return true
-
-    return false
-  } else if (playerOption === "Tesoura") {
-    if (botOption === "Papel") return true
-
-    return false
-  }
+  return false
 }
