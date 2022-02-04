@@ -32,16 +32,16 @@ onClickButton()
 
 const pickWinner = (playerOption, botOption) => {
   if (playerOption === "Pedra") {
-    if (botOption === "Pedra") return false
-    if (botOption === "Papel") return false
     if (botOption === "Tesoura") return true
+
+    return false
   } else if (playerOption === "Papel") {
     if (botOption === "Pedra") return true
-    if (botOption === "Papel") return false
-    if (botOption === "Tesoura") return false
+
+    return false
   } else if (playerOption === "Tesoura") {
-    if (botOption === "Pedra") return false
     if (botOption === "Papel") return true
-    if (botOption === "Tesoura") return false
+
+    return false
   }
 }
